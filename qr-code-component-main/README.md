@@ -10,7 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://qr-code-solution-jj.netlify.app/)
+- Live Site URL: [Click here!](https://qr-code-solution-jj.netlify.app/)
 
 ### Built with
 
