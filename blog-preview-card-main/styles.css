@@ -113,3 +113,16 @@ body {
   line-height: 150%;
 }
 
+@media (max-width: 400px) {
+  :root {
+    --font-24: 20px;
+    --font-16: 14px;
+    --font-14: 12px;
+    --spacing-24: 20px;
+    --spacing-12: 10px;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
