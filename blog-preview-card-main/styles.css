@@ -82,6 +82,7 @@ body {
   color: var(--grey-950);
   line-height: 150%;
 }
+
 .article-title:hover {
   color: var(--yellow);
   cursor: pointer;
