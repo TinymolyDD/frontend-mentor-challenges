@@ -67,13 +67,18 @@ body {
   margin-bottom: 10px;
 }
 
+.card-social-links {
+  width: 100%;
+}
+
 .card-social-links > * {
   margin-top: var(--spacing-16);
 }
 
 .card-social-links button {
-  width: 304px;
+  width: 100%;
   height: 45px;
+  padding: 0 20px;
   border-radius: 8px;
   border: hidden;
   background-color: var(--grey-700);
@@ -94,23 +99,9 @@ body {
 }
 
 @media (max-width: 400px) {
-  .card-social-links button {
-    width: 284px;
-  }
-
   .card {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 360px) {
-  .card-social-links button {
-    width: 224px;
-  }
-
-  .card {
-    width: 90%;
-    margin: 0 auto;
+    padding-inline: 32px;
   }
 }
