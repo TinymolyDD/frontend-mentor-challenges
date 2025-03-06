@@ -89,6 +89,10 @@ body {
   cursor: pointer;
 }
 
+.card-social-links li {
+  list-style: none;
+}
+
 @media (max-width: 400px) {
   .card-social-links button {
     width: 284px;
