@@ -4,13 +4,13 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## Overview
 
+### Links
+
+- Live Site URL: [Click here!](https://social-links-profile-jj.netlify.app/)
+
 ### Screenshot
 
 ![](./design/screenshot.png)
-
-### Links
-
-- Live Site URL: 
 
 ### Built with
 

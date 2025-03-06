@@ -4,13 +4,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
-### Screenshot
-
-![](./design/screenshot.jpg)
-
 ### Links
 
 - Live Site URL: [Click here!](https://qr-code-solution-jj.netlify.app/)
+
+### Screenshot
+
+![](./design/screenshot.jpg)
 
 ### Built with
 
