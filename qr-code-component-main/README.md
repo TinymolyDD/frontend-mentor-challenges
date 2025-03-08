@@ -15,3 +15,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Built with
 
 - HTML5 & CSS3
+
+### What I learned
+
+- The use of Flexbox (display: flex; align-items: center; justify-content: center;) to efficiently center content both horizontally and vertically.

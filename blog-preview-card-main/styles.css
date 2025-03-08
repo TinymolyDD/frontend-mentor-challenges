@@ -12,6 +12,7 @@
   --grey-950: hsl(0, 0%, 7%);
   --dark: hsl(0, 0%, 0%);
   --font-24: 24px;
+  --font-20: 20px;
   --font-16: 16px;
   --font-14: 14px;
   --spacing-24: 24px;
@@ -77,7 +78,7 @@ body {
 }
 
 .article-title {
-  font-size: var(--font-24);
+  font-size: clamp(var(--font-20), 5vw, var(--font-24));
   font-weight: 800;
   color: var(--grey-950);
   line-height: 150%;
@@ -115,13 +116,6 @@ body {
 }
 
 @media (max-width: 400px) {
-  :root {
-    --font-24: 20px;
-    --font-16: 14px;
-    --font-14: 12px;
-    --spacing-24: 20px;
-    --spacing-12: 10px;
-  }
   .card {
     width: 90%;
     margin: 0 auto;
