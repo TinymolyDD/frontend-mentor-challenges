@@ -66,6 +66,10 @@ body {
   display: block;
 }
 
+.card-intro {
+  padding-bottom: var(--spacing-32);
+}
+
 .card-content > * {
   margin-top: var(--spacing-32);
 }
@@ -193,6 +197,11 @@ ol li::marker {
 
   body {
     padding: 0;
+  }
+
+  .card-intro {
+    padding: 0 var(--spacing-32);
+    padding-bottom: var(--spacing-28);
   }
 
   .card-content {
