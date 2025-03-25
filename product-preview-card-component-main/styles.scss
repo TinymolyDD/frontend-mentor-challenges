@@ -133,9 +133,9 @@ body {
 
   @media (max-width: 600px) {
     flex-direction: column;
-    width: 21.375rem;
+    width: 90%;
     height: auto;
-    margin: 1rem;
+    margin: 0 auto;
     
     .card-img {
       width: 100%;
@@ -161,11 +161,5 @@ body {
         margin-top: 1.125rem;
       }
     }
-  }
-
-  @media (max-width: 360px) {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
   }
 }

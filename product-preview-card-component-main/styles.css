@@ -98,9 +98,9 @@ body {
 @media (max-width: 600px) {
   .card {
     flex-direction: column;
-    width: 21.375rem;
+    width: 90%;
     height: auto;
-    margin: 1rem;
+    margin: 0 auto;
   }
   .card .card-img {
     width: 100%;
@@ -120,13 +120,6 @@ body {
   }
   .card .card-content .content-action {
     margin-top: 1.125rem;
-  }
-}
-@media (max-width: 360px) {
-  .card {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
   }
 }
 
