@@ -4,11 +4,8 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: hsl(0, 0%, 98%);
-}
-
 body {
+  background-color: hsl(0, 0%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
