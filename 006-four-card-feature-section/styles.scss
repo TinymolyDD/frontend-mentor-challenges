@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+$grey-500: hsl(234, 12%, 34%);
+$grey-400: hsl(212, 6%, 44%);
+$grey-light: hsl(0, 0%, 98%);
+$shadow: hsl(212, 41%, 52%, 20%);
+$white: hsl(0, 0%, 100%);
+
+// Spacing
+$spacing-47: 2.9375rem;
+$spacing-35: 2.1875rem;
+$spacing-32: 2rem;
+$spacing-16: 1rem;
+$spacing-12: 0.75rem;
+
+// Radius
+$radius-8: 0.5rem;
+
+// Typography
+$leading-none: 1;
+$font-36: 200 clamp(1.5rem, 6vw, 2.25rem) / 1.39 "Poppins", sans-serif;
+$font-20: 600 1.25rem "Poppins", sans-serif;
+$font-15: 400 0.9375rem / 1.4 "Poppins", sans-serif;
+$font-13: 400 0.8125rem / 1.6 "Poppins", sans-serif;
+
+body {
+  background-color: $grey-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 0 $spacing-32;
+  margin-top: 6.375rem;
+  min-width: 16rem;
+}
+
+.wrapper--header {
+  width: 32.25rem;
+  text-align: center;
+
+  .title{
+    font: $font-36;
+    color: $grey-500;
+    letter-spacing: 0.02rem;
+  }
+
+  .title--emphasize {
+    font-weight: 600;
+    display: block;
+    letter-spacing: 0.02rem;
+  }
+
+  .description {
+    font: $font-15; 
+    color: $grey-500;
+    letter-spacing: 0.005rem;
+    margin-top: $spacing-16;
+  }
+}
+
+.wrapper--main {
+  max-width: 69.625rem;
+  display: flex;
+  align-items: center;
+  gap: $spacing-32;
+  margin: auto $spacing-32;
+  margin-top: 4.625rem;
+  margin-bottom: 10.1875rem;
+  
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-32;
+  }
+
+  .card {
+    background-color: $white;
+    padding: $spacing-32;
+    border-radius: $radius-8;
+    box-shadow: 0 0.75rem 1.25rem 0 $shadow;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    .subtitle {
+      font: $font-20;
+      color: $grey-500;
+      line-height: $leading-none;
+      margin-top: 0.25rem;
+    }
+
+    .content {
+      font: $font-13;
+      color: $grey-400;
+      letter-spacing: 0.005rem;
+      margin-top: 0.5rem;
+    }
+    
+    .icon {
+      margin-top: $spacing-32;
+      align-self: flex-end;
+      margin-bottom: 0.9375rem;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0.25rem;
+    }
+  }
+
+  .card--cyan::before {
+    background-color: $cyan;
+  }
+
+  .card--red::before  {
+    background-color: $red;
+  }
+
+  .card--orange::before  {
+    background-color: $orange;
+  }
+
+  .card--blue::before  {
+    background-color: $blue;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper { 
+    margin-top: 3.75rem;
+  }
+
+  .wrapper--header {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+  }
+
+  .wrapper--main {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2.875rem;
+  
+    .col {
+      width: 100%;
+    }
+  }
+}
