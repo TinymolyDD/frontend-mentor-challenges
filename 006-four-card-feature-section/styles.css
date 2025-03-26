@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   background-color: hsl(0, 0%, 98%);
+}
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;

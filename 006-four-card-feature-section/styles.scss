@@ -33,8 +33,11 @@ $font-20: 600 1.25rem "Poppins", sans-serif;
 $font-15: 400 0.9375rem / 1.4 "Poppins", sans-serif;
 $font-13: 400 0.8125rem / 1.6 "Poppins", sans-serif;
 
-body {
+html {
   background-color: $grey-light;
+}
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
