@@ -19,4 +19,5 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### What I learned
 
-- 
+- I use Flexbox layout mode to finish this project. By combining an outer Flexbox for horizontal layout and inner Flexboxes for vertical content, I achieved a structure similar to Grid.
+- I also applied various Flexbox properties, including those for the parent (the flex container), such as basic alignment properties, and for the children (flex items), such as flex-shrink, flex-grow, and flex-basis. In my project, I used flex: 1, which is shorthand for flex: 1 1 0%, ensuring that child elements shrink and grow equally without expanding when extra space is available.
