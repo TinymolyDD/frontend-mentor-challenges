@@ -95,7 +95,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: "c1" "c2" "c3" "c4" "c5";
     gap: 2rem;
-    margin-top: 4.5rem;
+    margin: 4.5rem 2.25rem;
   }
   .grid .card--1 {
     background-image: none;
