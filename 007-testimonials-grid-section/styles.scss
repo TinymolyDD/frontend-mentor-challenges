@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Colors
+$purple-50: hsl(260, 100%, 95%);
+$purple-300: hsl(264, 82%, 80%);
+$purple-500: hsl(263, 55%, 52%);
+
+$white: hsl(0, 0%, 100%);
+$grey-light: hsl(0, 0%, 96%);
+$grey-100: hsl(214, 17%, 92%);
+$grey-200: hsl(0, 0%, 81%);
+$grey-400: hsl(224, 10%, 45%);
+$grey-500: hsl(217, 19%, 35%);
+$dark-blue: hsl(219, 29%, 14%);
+$black: hsl(0, 0%, 7%);
+$shadow: hsl(249, 17%, 24%, 15%);
+
+// Spacing
+$spacing-32: 2rem;
+$spacing-24: 1.5rem;
+$spacing-16: 1rem;
+
+// Radius
+$radius-8: 0.5rem;
+
+// Typography
+$leading-none: 1;
+$font-20: 600 1.25rem "Barlow Semi Condensed", sans-serif;
+$font-13: 500 0.8125rem "Barlow Semi Condensed", sans-serif;
+$font-11: 500 0.6875rem "Barlow Semi Condensed", sans-serif;
+
+body {
+  background-color: $grey-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "c1 c1 c2 c5"
+  "c3 c4 c4 c5";
+  gap: $spacing-24 $spacing-32;
+  max-width: 69.625rem;
+  margin: 14.3125rem 2.25rem 0;
+  
+  .card {
+    padding: $spacing-32;
+    border-radius: $radius-8;
+    box-shadow: 2.25rem 2.25rem 4rem 0 $shadow;
+    background-color: $white;
+    color: $grey-500;
+
+    &--1 {
+      grid-area: c1;
+      background: $purple-500 url("./images/bg-pattern-quotation.svg") no-repeat top right 3.75rem;
+      color: $purple-50;
+    }
+
+    &--2 {
+      grid-area: c2;
+      background-color: $grey-500;
+      color: $grey-100;
+    }
+
+    &--3 {
+      grid-area: c3;
+    }
+
+    &--4 {
+      grid-area: c4;
+      background-color: $dark-blue;
+      color: $grey-200;
+    }
+
+    &--5 {
+      grid-area: c5;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        width: 2rem;
+        border-radius: 50%;
+        border: 0.125rem solid $white;
+        margin: -0.125rem 0 0 -0.125rem;
+      }
+
+      .info {
+        margin-left: $spacing-16;
+        line-height: $leading-none;
+
+        .name {
+          font: $font-13;
+          font-weight: 600;
+        }
+    
+        .tag {
+          margin-top: 0.3125rem;
+          font: $font-11;
+        }
+      }
+    }
+
+    .summary {
+      font: $font-20;
+      margin-top: $spacing-16;
+      line-height: 1.2;
+    }
+
+    .details {
+      font: $font-13;
+      margin-top: $spacing-16;
+      line-height: 1.385;
+    }
+  }
+
+  $avatar-borders: (
+    card--1: $purple-300,
+    card--2: $grey-500,
+    card--4: $purple-500
+  );
+  
+  @each $card, $color in $avatar-borders {
+    .#{$card} .user .avatar {
+      border-color: $color;
+    }
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5";
+    gap: $spacing-32;
+    margin-top: 4.5rem;
+
+    .card--1 {
+      background-image: none;
+    }
+  }
+}

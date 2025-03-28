@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "c1 c1 c2 c5" "c3 c4 c4 c5";
+  gap: 1.5rem 2rem;
+  max-width: 69.625rem;
+  margin: 14.3125rem 2.25rem 0;
+}
+.grid .card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.25rem 2.25rem 4rem 0 hsla(249, 17%, 24%, 0.15);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.grid .card--1 {
+  grid-area: c1;
+  background: hsl(263, 55%, 52%) url("./images/bg-pattern-quotation.svg") no-repeat top right 3.75rem;
+  color: hsl(260, 100%, 95%);
+}
+.grid .card--2 {
+  grid-area: c2;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 92%);
+}
+.grid .card--3 {
+  grid-area: c3;
+}
+.grid .card--4 {
+  grid-area: c4;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+.grid .card--5 {
+  grid-area: c5;
+}
+.grid .card .user {
+  display: flex;
+  align-items: center;
+}
+.grid .card .user .avatar {
+  width: 2rem;
+  border-radius: 50%;
+  border: 0.125rem solid hsl(0, 0%, 100%);
+  margin: -0.125rem 0 0 -0.125rem;
+}
+.grid .card .user .info {
+  margin-left: 1rem;
+  line-height: 1;
+}
+.grid .card .user .info .name {
+  font: 500 0.8125rem "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+}
+.grid .card .user .info .tag {
+  margin-top: 0.3125rem;
+  font: 500 0.6875rem "Barlow Semi Condensed", sans-serif;
+}
+.grid .card .summary {
+  font: 600 1.25rem "Barlow Semi Condensed", sans-serif;
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+.grid .card .details {
+  font: 500 0.8125rem "Barlow Semi Condensed", sans-serif;
+  margin-top: 1rem;
+  line-height: 1.385;
+}
+.grid .card--1 .user .avatar {
+  border-color: hsl(264, 82%, 80%);
+}
+.grid .card--2 .user .avatar {
+  border-color: hsl(217, 19%, 35%);
+}
+.grid .card--4 .user .avatar {
+  border-color: hsl(263, 55%, 52%);
+}
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "c1" "c2" "c3" "c4" "c5";
+    gap: 2rem;
+    margin-top: 4.5rem;
+  }
+  .grid .card--1 {
+    background-image: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
